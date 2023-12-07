@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16 32x32 48x48" type="image/png" href="../imagenes/ejercicios.png"/>
+    <link rel="stylesheet" href="estiloapi.css">
+    <title>API EJERCICIOS</title>
+</head>
+<body>
+    <header><div class="titulo">API de ejercicios GYM</div></header>
+
+
+        
+    <div class="container" id="contenedor">        
+            <div class="titulo" id="menu">
+                <div class="caja"> 
+                    <div class=" nombre ">Añadir un nuevo registro </div>
+                    <div class=" trabajo ">Nombre: <input type="text" id="name"> </div>
+                    <div>
+                        Suba Aqui su imagen "No olvide pulsar subir, luego continuar con los demás registros"
+                        <input type="file"  id="miInput">
+                        <button onclick="subir()">subir</button>
+                    </div>
+                    <div class=" imagen ">Imagen: <input type="text" id="img"> </div> 
+                    <div class=" trabajo ">Tipo de trabajo: <input type="text" id="traba"></div>
+                    <div class=" ejercicio ">Tipo de ejercicio: <input type="text" id="ejer"></div>
+                    <div class=" muscular ">Grupo muscular: <input type="text" id="muscu"> </div>
+                    <div class=" dificultad ">Dificultad: <input type="text" id="difi"> </div> 
+                    <div class=" riesgo ">Riesgo de lesion: <input type="text" id="ries"> </div>
+                    <div class=" riesgo "><button id="buttonAlta" onclick="alta()">Añadir</button></div>
+                </div>
+            </div>
+            <!-- EDITAR -->
+            <div class="titulo" id="menu">
+                <div class="caja"> 
+                    <div class=" nombre ">Editar registro </div>
+                    <div class=" trabajo ">Id: <input type="text" id="ide" readonly></div>
+                    <div class=" trabajo ">Nombre: <input type="text" id="namee"> </div>
+                    <div class=" imagen ">Imagen: <img src="" alt="" id="imagee"></div> 
+                    <div class=" trabajo ">Tipo de trabajo: <input type="text" id="trabaje"></div>
+                    <div class=" ejercicio ">Tipo de ejercicio: <input type="text" id="ejercicie"></div>
+                    <div class=" muscular ">Grupo muscular: <input type="text" id="musculare"> </div>
+                    <div class=" dificultad ">Dificultad: <input type="text" id="dificultade"> </div> 
+                    <div class=" riesgo ">Riesgo de lesion: <input type="text" id="riesge"> </div>
+                    <div class=" riesgo "><button id="buttonAlta" onclick="hacerEdicion()">Editar</button></div>
+                </div>
+            </div>
+    </div>
+    <div class="item" id="final"> 
+        <div class=" nombre ">Prueba la api con: </div>
+        <div class=" imagen "> http://localhost:3000/ejercicios</div>
+    </div>
+  
+
+        <script src="api.js"></script>
+</body>
+</html>

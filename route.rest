@@ -1,0 +1,33 @@
+
+
+GET http://localhost:3000/ejercicios/655fba2bc9bac80d490706ef
+
+###
+POST http://localhost:3000/ejercicios
+Content-Type: application/json
+
+{
+    "nombre": "Extension Piernas",
+    "imagen": "../imagenes/extensionpiernas.jpg",
+    "tipoDeTrabajo": "Pierna",
+    "tipoDeEjercicio": "Monoarticular",
+    "grupoMuscular": "Cuadriceps",
+    "dificultad": "Bajo",
+    "riesgoDeLesion": "Medio"
+}
+
+###
+
+DELETE http://localhost:3000/ejercicios/655fba2bc9bac80d490706ef
+
+###
+
+PATCH http://localhost:3000/ejercicios/6564be2418bddadc5d24e107
+Content-Type: application/json
+
+{
+    "imagen": "../imagenes/extensionpiernas.jpg"
+}
+
+###
+GET http://localhost:3000/ejercicios
